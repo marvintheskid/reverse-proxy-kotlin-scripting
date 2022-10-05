@@ -19,7 +19,7 @@ repositories {
     mavenCentral()
 
     flatDir {
-        dir("/deps")
+        dir("deps")
     }
 }
 
