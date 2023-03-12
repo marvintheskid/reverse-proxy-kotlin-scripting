@@ -67,14 +67,4 @@ public class Main extends ProxyAddon {
     public void onDisable() {
         this.handler.forEachScript((__, script) -> script.destruct());
     }
-
-    @Override
-    public void registerListeners(PacketListener... listeners) {
-        super.registerListeners(listeners);
-    }
-
-    @Override
-    public void unregisterListeners(Object... objects) {
-        super.unregisterListeners(objects);
-    }
 }
