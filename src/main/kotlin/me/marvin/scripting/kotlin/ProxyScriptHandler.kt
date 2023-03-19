@@ -142,8 +142,7 @@ class ProxyScriptHandler(private val logger: Logger, parentFolder: Path) {
                                 && it.code == ScriptDiagnostic.unspecifiedError
                                 && it.location != null)
                     }
-                    .joinToString("\n") { it.render(withSeverity = false) },
-                result.reports.find { it.exception != null }?.exception
+                    .joinToString("\n") { it.render(withSeverity = false, withStackTrace = true) },
             )
         }
 
